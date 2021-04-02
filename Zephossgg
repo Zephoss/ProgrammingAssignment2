@@ -1,4 +1,5 @@
 ## Some of the functions used to compute for the following inverse of a matrix
+## This show how the matrix can really be solve
 makeCacheMatrix <- function(x = matrix() {
   inverse <- NULL
   set <- function(z) {
@@ -11,6 +12,8 @@ makeCacheMatrix <- function(x = matrix() {
   list(set = set, get = get,
        setsolve = setsolve,
        getsolve = getsolve)
+#on the other hand this show how to calculate the given matrix
+#making sure that the matrix in inverse and accurate
 }
 cacheSolve <- function(z, ...) {
   inverse <- x$getsolve()
