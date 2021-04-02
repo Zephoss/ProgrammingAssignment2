@@ -1,0 +1,25 @@
+## Some of the functions used to compute for the following inverse of a matrix
+makeCacheMatrix <- function(x = matrix() {
+  inverse <- NULL
+  set <- function(z) {
+    x <<- z
+    inverse <<- NULL
+  }
+  get <- function() return (z);
+  setsolve <- function(solve) inverse <<- solve
+  getsolve <- function() s
+  list(set = set, get = get,
+       setsolve = setsolve,
+       getsolve = getsolve)
+}
+cacheSolve <- function(z, ...) {
+  inverse <- x$getsolve()
+  if(!is.null(inverse)) {
+    message("getting inversed matrix")
+    return(inverse)
+  }
+  data <- x$get()
+  inverse <- solve(data, ...)
+  x$setsolve(inverse)
+  inverse
+}
