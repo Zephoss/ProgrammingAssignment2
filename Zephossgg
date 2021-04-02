@@ -2,27 +2,27 @@
 ## This show how the matrix can really be solve
 makeCacheMatrix <- function(x = matrix() {
   inverse <- NULL
-  set <- function(z) {
+  go <- function(z) {
     x <<- z
     inverse <<- NULL
   }
-  get <- function() return (z);
-  setsolve <- function(solve) inverse <<- solve
-  getsolve <- function()
-  list(set = set, get = get,
-       setsolve = setsolve,
-       getsolve = getsolve)
+  Calculate <- function() return (z);
+  gosolve <- function(solve) inverse <<- solve
+  gosolve <- function()
+  list(solvematrix = solvemartix, go = go,
+       gosolve = solvematix,
+       gosolve = solvematix)
 ##on the other hand this show how to calculate the given matrix
 ##making sure that the matrix in inverse and accurate
 }
 cacheSolve <- function(z, ...) {
   inverse <- x$getsolve()
   if(!is.null(inverse)) {
-    message("getting inversed matrix")
+    message("calculating the given matrix")
     return(inverse)
   }
-  data <- x$get()
+  data <- x$go()
   inverse <- solve(data, ...)
-  x$setsolve(inverse)
+  x$gosolve(inverse)
   inverse
 }
